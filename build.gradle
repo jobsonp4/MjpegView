@@ -1,0 +1,23 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+
+    }
+}
+
+allprojects {
+    group = 'com.github.jobsonp4'
+    version = '1.0.0'
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
